@@ -1,37 +1,25 @@
 # EasyAdminProject
 
-Galerie peinture
+Galerie de peinture
 
-## Installation
+## Environnement de développement
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+### Pré-requis
+
+* PHP 7.4
+* Composer
+* Symfony CLI 
+* Docker
+* Docker-compose
+
+Vous pouvez verifier les pré-requis (sauf Docker et Docker-compose) avec la commande suivante (de la CLI Symfony) :
 
 ```bash
-pip install foobar
+symfony check:requirements
 ```
+### Lancer l'environnement de développement
 
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```bash
+docker-compose up -d
+symfony serve -d
 ```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
